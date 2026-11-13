@@ -18,8 +18,8 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(115deg, transparent 42%, rgba(255, 79, 26, 0.09) 42.2%, rgba(255, 79, 26, 0.09) 58%, transparent 58.2%),
-    linear-gradient(180deg, #14110e 0%, #100e0c 100%);
+    linear-gradient(115deg, transparent 42%, rgba(201, 162, 39, 0.09) 42.2%, rgba(201, 162, 39, 0.09) 58%, transparent 58.2%),
+    linear-gradient(180deg, #101010 0%, #0a0a0a 100%);
   pointer-events: none;
 }
 
@@ -504,7 +504,7 @@
   height: 9px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(255, 79, 26, 0.15);
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.15);
 }
 
 .journey-item__label {
@@ -620,7 +620,7 @@
   gap: 1.25rem;
   padding: 2.5rem;
   border: 1px solid var(--line);
-  background: linear-gradient(160deg, rgba(255, 79, 26, 0.08), transparent 55%);
+  background: linear-gradient(160deg, rgba(201, 162, 39, 0.08), transparent 55%);
 }
 
 .expertise-note h3 {
@@ -1127,8 +1127,8 @@
 }
 
 .form-status.is-ok {
-  border-color: rgba(255, 79, 26, 0.45);
-  background: rgba(255, 79, 26, 0.06);
+  border-color: rgba(201, 162, 39, 0.45);
+  background: rgba(201, 162, 39, 0.06);
   color: var(--text);
 }
 
