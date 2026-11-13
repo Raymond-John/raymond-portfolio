@@ -125,37 +125,20 @@
     gap: 0.75rem;
   }
 
-  .home-hero__code {
+  .code-watermark {
+    opacity: 0.12;
     align-items: end;
-    justify-items: stretch;
-    padding: 0;
+    padding-bottom: 18vh;
   }
 
-  .hero-code {
-    width: 100%;
-    max-height: 46vh;
-    transform: none;
-    animation: none;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    opacity: 0.55;
+  .code-watermark__editor {
+    font-size: 0.72rem;
+    min-height: 8rem;
   }
 
-  .home-hero__scrim {
-    background:
-      linear-gradient(180deg, rgba(10, 10, 10, 0.72) 0%, rgba(10, 10, 10, 0.88) 42%, rgba(10, 10, 10, 0.96) 100%);
-  }
-
-  .hero-code__editor {
-    min-height: 140px;
+  .code-watermark__out {
     font-size: 0.68rem;
-    padding: 0.85rem 1rem;
-  }
-
-  .hero-code__out {
-    min-height: 3.2rem;
-    font-size: 0.66rem;
+    min-height: 2.5rem;
   }
 
   .home-about__lead {

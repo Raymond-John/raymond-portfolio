@@ -57,13 +57,44 @@
     existing.innerHTML = richFooter();
   }
 
-  if (document.body && !document.body.classList.contains("admin-body")) {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", upgradeFooter);
-    } else {
-      upgradeFooter();
+  function injectCodeWatermark() {
+    if (document.getElementById("code-watermark")) return;
+    var layer = document.createElement("div");
+    layer.className = "code-watermark";
+    layer.id = "code-watermark";
+    layer.setAttribute("aria-hidden", "true");
+    layer.innerHTML =
+      '<div class="code-watermark__panel">' +
+      '<div class="code-watermark__chrome">' +
+      '<span class="code-watermark__file" id="wm-code-file">signal.js</span>' +
+      '<span class="code-watermark__status" id="wm-code-status">typing</span>' +
+      "</div>" +
+      '<pre class="code-watermark__editor"><code id="wm-code-typed"></code><span class="code-watermark__caret" id="wm-code-caret"></span></pre>' +
+      '<div class="code-watermark__run">' +
+      '<div class="code-watermark__run-bar">' +
+      '<span id="wm-code-run-cmd">$ node signal.js</span>' +
+      '<span id="wm-code-run-state">idle</span>' +
+      "</div>" +
+      '<pre class="code-watermark__out" id="wm-code-out"></pre>' +
+      "</div></div>";
+    document.body.insertBefore(layer, document.body.firstChild);
+  }
+
+  function bootShell() {
+    injectCodeWatermark();
+    upgradeFooter();
+    if (window.RJCodeWatermark && typeof window.RJCodeWatermark.start === "function") {
+      window.RJCodeWatermark.start();
     }
   }
 
-  window.RJShell = { upgradeFooter: upgradeFooter };
+  if (document.body && !document.body.classList.contains("admin-body")) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", bootShell);
+    } else {
+      bootShell();
+    }
+  }
+
+  window.RJShell = { upgradeFooter: upgradeFooter, injectCodeWatermark: injectCodeWatermark };
 })();
