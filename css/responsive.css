@@ -121,39 +121,39 @@
   }
 
   .home-hero__layout {
-    grid-template-columns: 1fr;
     padding: 1.15rem 0 1.5rem;
-    gap: 1.1rem;
-    min-height: auto;
-  }
-
-  .home-hero {
-    min-height: auto;
-  }
-
-  .home-hero__copyblock {
     gap: 0.75rem;
   }
 
   .home-hero__code {
-    order: 2;
+    align-items: end;
+    justify-items: stretch;
+    padding: 0;
   }
 
   .hero-code {
+    width: 100%;
+    max-height: 48vh;
     transform: none;
     animation: none;
-    max-height: none;
-    border-radius: 2px;
+    border-left: 0;
+    border-right: 0;
+    opacity: 0.72;
+  }
+
+  .home-hero__scrim {
+    background:
+      linear-gradient(180deg, rgba(10, 10, 10, 0.55) 0%, rgba(10, 10, 10, 0.82) 38%, rgba(10, 10, 10, 0.94) 100%);
   }
 
   .hero-code__editor {
-    min-height: 150px;
+    min-height: 140px;
     font-size: 0.68rem;
-    padding: 0.85rem 0.9rem;
+    padding: 0.85rem 0.95rem;
   }
 
   .hero-code__out {
-    min-height: 3.2rem;
+    min-height: 3rem;
     font-size: 0.66rem;
   }
 
