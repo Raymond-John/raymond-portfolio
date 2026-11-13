@@ -125,25 +125,31 @@
     gap: 0.75rem;
   }
 
-  .home-hero__code {
+  .home-hero .home-hero__code {
     align-items: end;
     justify-items: stretch;
     padding: 0;
+    z-index: 1;
   }
 
   .hero-code {
     width: 100%;
-    max-height: 48vh;
+    max-height: 46vh;
     transform: none;
     animation: none;
     border-left: 0;
     border-right: 0;
-    opacity: 0.72;
+    opacity: 0.85;
   }
 
   .home-hero__scrim {
+    z-index: 2;
     background:
-      linear-gradient(180deg, rgba(10, 10, 10, 0.55) 0%, rgba(10, 10, 10, 0.82) 38%, rgba(10, 10, 10, 0.94) 100%);
+      linear-gradient(180deg, rgba(10, 10, 10, 0.72) 0%, rgba(10, 10, 10, 0.88) 45%, rgba(10, 10, 10, 0.55) 100%);
+  }
+
+  .home-hero__layout {
+    z-index: 3;
   }
 
   .hero-code__editor {

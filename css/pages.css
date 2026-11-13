@@ -56,10 +56,10 @@
   }
 }
 
-.home-hero__code {
+.home-hero .home-hero__code {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 2;
   display: grid;
   align-items: center;
   justify-items: end;
@@ -93,8 +93,8 @@
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(10, 10, 10, 0.94) 0%, rgba(10, 10, 10, 0.78) 36%, rgba(10, 10, 10, 0.22) 68%, rgba(10, 10, 10, 0.5) 100%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.3) 0%, transparent 30%, rgba(10, 10, 10, 0.5) 100%);
+    linear-gradient(90deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.72) 34%, rgba(10, 10, 10, 0.15) 58%, transparent 72%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.25) 0%, transparent 35%, rgba(10, 10, 10, 0.35) 100%);
 }
 
 .home-hero__layout {
