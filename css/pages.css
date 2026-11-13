@@ -103,11 +103,10 @@
   display: grid;
   align-content: center;
   gap: 1rem;
-  width: min(52%, 34rem);
+  max-width: min(54%, 36rem);
   min-height: calc(100vh - var(--nav-h));
   min-height: calc(100dvh - var(--nav-h));
   padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(2rem, 4vw, 3rem);
-  margin-right: auto;
 }
 
 .hero-code__chrome {
@@ -226,11 +225,12 @@
 .home-hero__brand {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.8rem, 8.5vw, 6.4rem);
+  font-size: clamp(2.8rem, 7.5vw, 5.6rem);
   line-height: 0.9;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  width: min(100%, 11.5ch);
+  width: max-content;
+  max-width: 100%;
 }
 
 .home-hero__brand span {
