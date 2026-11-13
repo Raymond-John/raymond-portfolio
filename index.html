@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css?v=gold3" />
-    <link rel="stylesheet" href="css/pages.css?v=gold3" />
-    <link rel="stylesheet" href="css/animations.css?v=gold3" />
-    <link rel="stylesheet" href="css/responsive.css?v=gold3" />
+    <link rel="stylesheet" href="css/style.css?v=gold4" />
+    <link rel="stylesheet" href="css/pages.css?v=gold4" />
+    <link rel="stylesheet" href="css/animations.css?v=gold4" />
+    <link rel="stylesheet" href="css/responsive.css?v=gold4" />
   </head>
   <body data-page="home">
     <div class="page-transition" id="page-transition" aria-hidden="true">
@@ -62,17 +62,36 @@
         </div>
         <p class="home-hero__rail" aria-hidden="true">Available for selected builds · Nigeria</p>
         <div class="wrap--wide home-hero__layout">
-          <p class="eyebrow home-hero__kicker" data-intro="eyebrow">Software Developer / Signal-clear builds</p>
-          <h1 class="home-hero__brand" data-intro="copy">Raymond <span>John</span></h1>
-          <p class="home-hero__title" data-intro="copy">
-            I build the systems businesses actually run on.
-          </p>
-          <p class="lede home-hero__copy" data-intro="copy" data-bind="intro">
-            Websites, web apps and backend structure with clarity first — so the product feels intentional and keeps working after launch.
-          </p>
-          <div class="home-hero__actions">
-            <a class="btn btn--fill magnetic" data-intro="action" href="projects.html" data-cursor="hot">Explore the work <span class="btn__arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost magnetic" data-intro="action" href="contact.html" data-cursor="hot">Start a build</a>
+          <div class="home-hero__copyblock">
+            <p class="eyebrow home-hero__kicker" data-intro="eyebrow">Software Developer / Signal-clear builds</p>
+            <h1 class="home-hero__brand" data-intro="copy">Raymond <span>John</span></h1>
+            <p class="home-hero__title" data-intro="copy">
+              I build the systems businesses actually run on.
+            </p>
+            <p class="lede home-hero__copy" data-intro="copy" data-bind="intro">
+              Websites, web apps and backend structure with clarity first — so the product feels intentional and keeps working after launch.
+            </p>
+            <div class="home-hero__actions">
+              <a class="btn btn--fill magnetic" data-intro="action" href="projects.html" data-cursor="hot">Explore the work <span class="btn__arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost magnetic" data-intro="action" href="contact.html" data-cursor="hot">Start a build</a>
+            </div>
+          </div>
+          <div class="home-hero__code" id="hero-code" aria-hidden="true">
+            <div class="hero-code">
+              <div class="hero-code__chrome">
+                <span class="hero-code__dots" aria-hidden="true"></span>
+                <span class="hero-code__file" id="hero-code-file">signal.js</span>
+                <span class="hero-code__status" id="hero-code-status">typing</span>
+              </div>
+              <pre class="hero-code__editor"><code id="hero-code-typed"></code><span class="hero-code__caret" id="hero-code-caret"></span></pre>
+              <div class="hero-code__run">
+                <div class="hero-code__run-bar">
+                  <span id="hero-code-run-cmd">$ node signal.js</span>
+                  <span id="hero-code-run-state">idle</span>
+                </div>
+                <pre class="hero-code__out" id="hero-code-out"></pre>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -205,12 +224,12 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/data.js"></script>
-    <script src="js/shell.js?v=gold3"></script>
-    <script src="js/code-watermark.js?v=gold3"></script>
+    <script src="js/shell.js?v=gold4"></script>
+    <script src="js/code-watermark.js?v=gold4"></script>
     <script src="js/public-render.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/transitions.js"></script>
     <script src="js/animations.js"></script>
-        <script src="js/main.js?v=gold3"></script>
+        <script src="js/main.js?v=gold4"></script>
   </body>
 </html>
