@@ -73,23 +73,18 @@
 }
 
 .hero-code {
-  width: min(560px, 46vw);
+  width: min(560px, 48vw);
   max-height: min(72vh, 640px);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: 1px solid rgba(201, 162, 39, 0.45);
-  background:
-    linear-gradient(160deg, rgba(22, 20, 14, 0.96), rgba(8, 8, 8, 0.98)),
-    #0a0a0a;
+  border: 1px solid rgba(201, 162, 39, 0.7);
+  background: #11110d;
   box-shadow:
-    0 0 0 1px rgba(243, 234, 216, 0.06),
-    0 28px 70px rgba(0, 0, 0, 0.55),
-    0 0 60px rgba(201, 162, 39, 0.12),
-    inset 0 1px 0 rgba(232, 213, 163, 0.1);
+    0 0 0 1px rgba(243, 234, 216, 0.08),
+    0 24px 60px rgba(0, 0, 0, 0.65),
+    0 0 80px rgba(201, 162, 39, 0.18);
   overflow: hidden;
-  transform: perspective(1200px) rotateY(-8deg) rotateX(2deg);
-  transform-origin: right center;
-  animation: hero-code-drift 12s var(--ease-soft) infinite alternate;
+  opacity: 1;
 }
 
 .home-hero__scrim {
@@ -108,7 +103,7 @@
   display: grid;
   align-content: center;
   gap: 1rem;
-  width: min(560px, 100%);
+  width: min(52%, 34rem);
   min-height: calc(100vh - var(--nav-h));
   min-height: calc(100dvh - var(--nav-h));
   padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(2rem, 4vw, 3rem);
@@ -155,9 +150,9 @@
   padding: 1.05rem 1.1rem 1.2rem;
   overflow: hidden;
   font-family: "Consolas", "SFMono-Regular", ui-monospace, monospace;
-  font-size: clamp(0.72rem, 1.05vw, 0.86rem);
+  font-size: clamp(0.78rem, 1.15vw, 0.92rem);
   line-height: 1.55;
-  color: #e8d5a3;
+  color: #f0d78c;
   white-space: pre-wrap;
   word-break: break-word;
   min-height: 210px;
@@ -221,20 +216,7 @@
   }
 }
 
-@keyframes hero-code-drift {
-  from {
-    transform: perspective(1200px) rotateY(-8deg) rotateX(2deg) translateY(0);
-  }
-  to {
-    transform: perspective(1200px) rotateY(-5deg) rotateX(1deg) translateY(-10px);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .hero-code {
-    animation: none;
-  }
-
   .hero-code__caret.is-on {
     animation: none;
     opacity: 1;

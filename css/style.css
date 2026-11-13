@@ -88,7 +88,7 @@ body::after {
   padding: clamp(1rem, 4vw, 3rem);
   pointer-events: none;
   overflow: hidden;
-  opacity: 0.16;
+  opacity: 0.22;
 }
 
 .code-watermark__panel {
