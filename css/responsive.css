@@ -134,22 +134,22 @@
 
   .hero-code {
     width: 100%;
-    max-height: 46vh;
+    max-height: 42vh;
     transform: none;
     animation: none;
     border-left: 0;
     border-right: 0;
-    opacity: 0.85;
+    opacity: 0.9;
   }
 
   .home-hero__scrim {
-    z-index: 2;
     background:
-      linear-gradient(180deg, rgba(10, 10, 10, 0.72) 0%, rgba(10, 10, 10, 0.88) 45%, rgba(10, 10, 10, 0.55) 100%);
+      linear-gradient(180deg, rgba(10, 10, 10, 0.55) 0%, rgba(10, 10, 10, 0.78) 48%, rgba(10, 10, 10, 0.35) 100%);
   }
 
   .home-hero__layout {
-    z-index: 3;
+    width: 100%;
+    z-index: 2;
   }
 
   .hero-code__editor {
