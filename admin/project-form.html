@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project form — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="project-form">
+    <div class="admin-app">
+      <div class="admin-shell">
+        <aside id="admin-sidebar"></aside>
+        <div id="admin-backdrop"></div>
+        <div class="main">
+          <header class="topbar">
+            <div class="topbar__left">
+              <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+              <div>
+                <h1 id="form-heading">Add project</h1>
+                <p id="form-sub">Create a case study for the public portfolio</p>
+              </div>
+            </div>
+            <a class="btn btn-ghost" href="projects.html">Back to projects</a>
+          </header>
+          <div class="content">
+            <form class="form-layout" id="project-form">
+              <div class="form-sections">
+                <section class="panel form-section">
+                  <h3>Basics</h3>
+                  <div class="field-row">
+                    <div class="field"><label for="title">Project title</label><input id="title" name="title" required placeholder="RD Vendora" /></div>
+                    <div class="field"><label for="category">Category</label><input id="category" name="category" placeholder="Marketplace" /></div>
+                  </div>
+                  <div class="field"><label for="summary">Short summary</label><textarea id="summary" name="summary" placeholder="One or two sentences for cards and listings"></textarea></div>
+                  <div class="field"><label for="overview">Overview</label><textarea id="overview" name="overview" placeholder="Longer case-study overview"></textarea></div>
+                </section>
+                <section class="panel form-section">
+                  <h3>Details</h3>
+                  <div class="field-row">
+                    <div class="field"><label for="objectives">Objectives (one per line)</label><textarea id="objectives" name="objectives"></textarea></div>
+                    <div class="field"><label for="features">Features (one per line)</label><textarea id="features" name="features"></textarea></div>
+                  </div>
+                  <div class="field"><label for="technologies">Technologies (comma separated)</label><input id="technologies" name="technologies" placeholder="PHP, MySQL, JavaScript" /></div>
+                  <div class="field-row">
+                    <div class="field"><label for="liveUrl">Live URL</label><input id="liveUrl" name="liveUrl" placeholder="Optional" /></div>
+                    <div class="field"><label for="githubUrl">GitHub URL</label><input id="githubUrl" name="githubUrl" placeholder="Optional" /></div>
+                  </div>
+                </section>
+              </div>
+              <aside class="panel form-section">
+                <h3>Publishing</h3>
+                <div class="field"><label for="coverLabel">Cover placeholder label</label><input id="coverLabel" name="coverLabel" /></div>
+                <div class="field"><label for="order">Display order</label><input id="order" name="order" type="number" value="1" /></div>
+                <div class="checks" style="margin:1rem 0 1.25rem">
+                  <label><input type="checkbox" id="published" name="published" checked /> Published</label>
+                  <label><input type="checkbox" id="featured" name="featured" /> Featured on Home</label>
+                </div>
+                <p class="muted small" style="margin-bottom:1rem;line-height:1.6">Saving updates the public website immediately in this browser. No backend is used yet.</p>
+                <div class="form-sticky">
+                  <a class="btn btn-ghost" href="projects.html">Cancel</a>
+                  <button class="btn btn-primary" type="submit">Save project</button>
+                </div>
+              </aside>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

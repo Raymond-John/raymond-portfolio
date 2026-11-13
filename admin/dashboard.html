@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="dashboard">
+    <div class="admin-app">
+      <div class="admin-shell">
+        <aside id="admin-sidebar"></aside>
+        <div id="admin-backdrop"></div>
+        <div class="main">
+          <header class="topbar">
+            <div class="topbar__left">
+              <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+              <div>
+                <h1>Dashboard</h1>
+                <p>Studio overview of portfolio content and inbox activity</p>
+              </div>
+            </div>
+            <div class="topbar__actions">
+              <a class="btn btn-ghost" href="../index.html" target="_blank" rel="noopener">View site</a>
+              <a class="btn btn-primary" href="project-form.html">Add project</a>
+            </div>
+          </header>
+          <div class="content" id="dashboard-root"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

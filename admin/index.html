@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login — Raymond John</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="login">
+    <div class="banner"><strong>Frontend demo only.</strong> This login is not secure authentication.</div>
+    <main class="login-page">
+      <section class="login-visual">
+        <div>
+          <p class="eyebrow">Raymond John</p>
+          <h1>Studio desk for a cinematic portfolio.</h1>
+          <p>Manage projects, services, about copy, media placeholders and inbox messages — then see them update on the public website instantly in this browser.</p>
+        </div>
+        <div class="login-visual__meta">
+          <div><strong>Projects CMS</strong><span>Publish, feature and edit case studies</span></div>
+          <div><strong>Public sync</strong><span>localStorage bridge to the live-looking site</span></div>
+          <div><strong>Demo auth</strong><span>admin / admin123 — replace later with real backend</span></div>
+        </div>
+      </section>
+      <section class="login-panel">
+        <form class="login-card" id="login-form">
+          <p class="eyebrow">RJ Signal</p>
+          <h2>Sign in</h2>
+          <p class="lede">Open the studio desk that drives the public portfolio.</p>
+          <div class="field">
+            <label for="username">Username</label>
+            <input id="username" name="username" value="admin" required autocomplete="username" />
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" value="admin123" required autocomplete="current-password" />
+          </div>
+          <p id="login-error" class="login-error" hidden></p>
+          <button class="btn btn-primary btn-block" type="submit">Enter dashboard</button>
+          <div class="login-hint">Demo credentials are prefilled. No server is involved — logout clears only this browser session flag.</div>
+          <p style="margin-top:1rem"><a class="muted" href="../index.html">← Back to public site</a></p>
+        </form>
+      </section>
+    </main>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

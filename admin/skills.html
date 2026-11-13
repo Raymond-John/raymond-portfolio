@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="skills">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Skills</h1>
+              <p>Controls the public Expertise page groups</p>
+            </div>
+          </div>
+          <a class="btn btn-ghost" href="../expertise.html" target="_blank" rel="noopener">Preview page</a>
+        </header>
+        <div class="content">
+          <form class="panel" id="skills-form">
+            <div class="panel__head">
+              <div>
+                <h2>Technology groups</h2>
+                <p>Use commas between items. Chips update as you type.</p>
+              </div>
+              <button class="btn btn-primary" type="submit">Save skills</button>
+            </div>
+            <div class="field">
+              <label for="frontend">Frontend</label>
+              <input id="frontend" name="frontend" />
+              <div class="chip-wrap" id="chips-frontend"></div>
+            </div>
+            <div class="field">
+              <label for="backend">Backend</label>
+              <input id="backend" name="backend" />
+              <div class="chip-wrap" id="chips-backend"></div>
+            </div>
+            <div class="field">
+              <label for="tools">Tools</label>
+              <input id="tools" name="tools" />
+              <div class="chip-wrap" id="chips-tools"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

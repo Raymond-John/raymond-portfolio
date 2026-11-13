@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About info — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="about">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>About information</h1>
+              <p>Copy used across Home and About pages</p>
+            </div>
+          </div>
+          <a class="btn btn-ghost" href="../about.html" target="_blank" rel="noopener">Preview page</a>
+        </header>
+        <div class="content">
+          <form class="panel" id="about-form">
+            <div class="panel__head">
+              <div><h2>Profile narrative</h2><p>Keep this honest — no invented achievements</p></div>
+              <button class="btn btn-primary" type="submit">Save about info</button>
+            </div>
+            <div class="field"><label for="tagline">Homepage tagline</label><input id="tagline" name="tagline" /></div>
+            <div class="field"><label for="intro">Homepage intro</label><textarea id="intro" name="intro"></textarea></div>
+            <div class="field"><label for="bioLead">About lead</label><textarea id="bioLead" name="bioLead"></textarea></div>
+            <div class="field"><label for="bio">Biography</label><textarea id="bio" name="bio" style="min-height:140px"></textarea></div>
+            <div class="field"><label for="philosophy">Philosophy</label><textarea id="philosophy" name="philosophy"></textarea></div>
+            <div class="field"><label for="interests">Interests (one per line)</label><textarea id="interests" name="interests"></textarea></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

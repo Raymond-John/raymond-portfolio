@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Animation helpers + reduced motion
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+.reveal.is-shown {
+  opacity: 1;
+  transform: none;
+}
+
+.char {
+  display: inline-block;
+}
+
+.magnetic {
+  will-change: transform;
+}
+
+@keyframes softFloat {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2%, -3%);
+  }
+}
+
+.glow--float {
+  animation: softFloat 16s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .mobile-nav__link,
+  .line-mask__inner {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .glow--float {
+    animation: none !important;
+  }
+
+  .cursor {
+    display: none !important;
+  }
+
+  body.has-custom-cursor,
+  body.has-custom-cursor * {
+    cursor: auto !important;
+  }
+
+  .page-transition {
+    display: none !important;
+  }
+}

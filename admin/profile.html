@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin profile — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="profile">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Admin profile</h1>
+              <p>Demo account details for this frontend CMS</p>
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <form class="panel" id="profile-form" style="max-width:720px">
+            <div class="panel__head">
+              <div>
+                <h2>Account</h2>
+                <p>Password changes are stored locally and are not secure authentication</p>
+              </div>
+              <button class="btn btn-primary" type="submit">Save profile</button>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="displayName">Display name</label><input id="displayName" name="displayName" /></div>
+              <div class="field"><label for="role">Role</label><input id="role" name="role" /></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="username">Username</label><input id="username" name="username" /></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" /></div>
+            </div>
+            <div class="field"><label for="password">New demo password (optional)</label><input id="password" name="password" type="password" autocomplete="new-password" /></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

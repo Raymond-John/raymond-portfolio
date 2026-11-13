@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="messages">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Messages</h1>
+              <p>Demo inbox fed by the public contact form</p>
+            </div>
+          </div>
+          <a class="btn btn-ghost" href="../contact.html" target="_blank" rel="noopener">Open contact page</a>
+        </header>
+        <div class="content">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <h2>Inbox</h2>
+                <p>Mark as read or delete. Nothing is emailed — browser storage only.</p>
+              </div>
+            </div>
+            <div id="messages-root"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

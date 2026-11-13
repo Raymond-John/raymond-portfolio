@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="media">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Media library</h1>
+              <p>Placeholder library UI — no real uploads yet</p>
+            </div>
+          </div>
+        </header>
+        <div class="content form-layout">
+          <form class="panel" id="media-form">
+            <div class="panel__head"><div><h2>Add placeholder</h2><p>Simulates media entries for the demo</p></div></div>
+            <div class="field"><label for="name">Name</label><input id="name" name="name" required /></div>
+            <div class="field"><label for="label">Label</label><input id="label" name="label" placeholder="Screenshot placeholder" /></div>
+            <button class="btn btn-primary" type="submit">Add item</button>
+          </form>
+          <div class="panel">
+            <div class="panel__head"><div><h2>Library</h2><p>Visual placeholders only</p></div></div>
+            <div id="media-root"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

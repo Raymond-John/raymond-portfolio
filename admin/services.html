@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="services">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Services</h1>
+              <p>Publish offerings shown on the public Services page</p>
+            </div>
+          </div>
+          <a class="btn btn-ghost" href="../services.html" target="_blank" rel="noopener">Preview page</a>
+        </header>
+        <div class="content form-layout">
+          <form class="panel" id="service-add-form">
+            <div class="panel__head"><div><h2>Add service</h2><p>New items are published by default</p></div></div>
+            <div class="field"><label for="title">Title</label><input id="title" name="title" required /></div>
+            <div class="field"><label for="description">Description</label><textarea id="description" name="description" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Add service</button>
+          </form>
+          <div class="panel">
+            <div class="panel__head"><div><h2>Current services</h2><p>Edit, publish or remove</p></div></div>
+            <div class="service-list" id="services-admin-root"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

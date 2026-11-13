@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Services by Raymond John — websites, web apps, PHP backends and maintenance." />
+    <meta name="theme-color" content="#100e0c" />
+    <title>Services — Raymond John</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=signal12" />
+    <link rel="stylesheet" href="css/pages.css?v=signal12" />
+    <link rel="stylesheet" href="css/animations.css?v=signal12" />
+    <link rel="stylesheet" href="css/responsive.css?v=signal12" />
+  </head>
+  <body data-page="services">
+    <div class="page-transition" id="page-transition" aria-hidden="true"><div class="page-transition__panel"></div><div class="page-transition__mark">Raymond John</div></div>
+    <div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header" id="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html" data-cursor="hot">Raymond <span>John</span></a>
+        <ul class="nav__list">
+          <li><a class="nav__link" data-nav href="index.html" data-cursor="hot">Home</a></li>
+          <li><a class="nav__link" data-nav href="about.html" data-cursor="hot">About</a></li>
+          <li><a class="nav__link" data-nav href="expertise.html" data-cursor="hot">Expertise</a></li>
+          <li><a class="nav__link" data-nav href="projects.html" data-cursor="hot">Projects</a></li>
+          <li><a class="nav__link" data-nav href="services.html" data-cursor="hot">Services</a></li>
+          <li><a class="nav__link" data-nav href="process.html" data-cursor="hot">Process</a></li>
+          <li><a class="nav__link" data-nav href="contact.html" data-cursor="hot">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" data-cursor="hot"><span class="nav__toggle-bars" aria-hidden="true"></span></button>
+      </nav>
+    </header>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" data-nav href="index.html" data-cursor="hot">Home</a></li>
+        <li><a class="mobile-nav__link" data-nav href="about.html" data-cursor="hot">About</a></li>
+        <li><a class="mobile-nav__link" data-nav href="expertise.html" data-cursor="hot">Expertise</a></li>
+        <li><a class="mobile-nav__link" data-nav href="projects.html" data-cursor="hot">Projects</a></li>
+        <li><a class="mobile-nav__link" data-nav href="services.html" data-cursor="hot">Services</a></li>
+        <li><a class="mobile-nav__link" data-nav href="process.html" data-cursor="hot">Process</a></li>
+        <li><a class="mobile-nav__link" data-nav href="contact.html" data-cursor="hot">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="page">
+      <header class="page-hero">
+        <div class="page-hero__bg" aria-hidden="true"><div class="glow glow--bl"></div></div>
+        <div class="wrap">
+          <p class="eyebrow" data-intro="eyebrow">What I offer</p>
+          <h1 class="display display--lg services-hero__title" data-intro="title" data-split-lines>Services<br />with intent.</h1>
+          <p class="lede" data-intro="copy" style="margin-top:1.25rem">Editorial service presentation — clear offerings without generic card grids.</p>
+        </div>
+      </header>
+
+      <section class="section" style="padding-top:0">
+        <div class="wrap">
+          <div class="service-editorial" id="services-list"></div>
+        </div>
+      </section>
+
+      <section class="section section--tone">
+        <div class="wrap content-grid-2">
+          <div class="content-block reveal">
+            <p class="eyebrow">Engagement</p>
+            <h2 class="display display--md">Who these services are for.</h2>
+            <p>Founders, small businesses and teams who need a professional digital presence or a custom web application without unnecessary complexity.</p>
+            <p>If you already have an idea, brand direction or rough content — we can refine the structure and build from there. If you are starting fresh, we begin with clarity.</p>
+          </div>
+          <div class="reveal">
+            <ul class="detail-list">
+              <li><strong>Business websites</strong><span>Pages that introduce your brand, services and contact paths with confidence.</span></li>
+              <li><strong>Product-style applications</strong><span>Marketplaces, booking concepts, school platforms and similar feature-driven builds.</span></li>
+              <li><strong>Backend &amp; database work</strong><span>PHP logic and MySQL structures that support forms, content and product flows.</span></li>
+              <li><strong>Ongoing care</strong><span>Maintenance, improvements and refinements after launch.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap" style="display:grid;gap:1.5rem">
+          <p class="eyebrow">Ready</p>
+          <h2 class="display display--md">Tell me what you want to build.</h2>
+          <p class="lede">Share the goal, timeline and any references you like. I’ll respond with a clear next step.</p>
+          <a class="btn btn--fill magnetic" href="contact.html" data-cursor="hot">Discuss a project <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/shell.js?v=signal12"></script>
+    <script src="js/public-render.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js?v=signal12"></script>
+  </body>
+</html>

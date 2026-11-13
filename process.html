@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Development process — discover, design, develop, deliver." />
+    <meta name="theme-color" content="#100e0c" />
+    <title>Process — Raymond John</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=signal12" />
+    <link rel="stylesheet" href="css/pages.css?v=signal12" />
+    <link rel="stylesheet" href="css/animations.css?v=signal12" />
+    <link rel="stylesheet" href="css/responsive.css?v=signal12" />
+  </head>
+  <body data-page="process">
+    <div class="page-transition" id="page-transition" aria-hidden="true"><div class="page-transition__panel"></div><div class="page-transition__mark">Raymond John</div></div>
+    <div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header" id="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html" data-cursor="hot">Raymond <span>John</span></a>
+        <ul class="nav__list">
+          <li><a class="nav__link" data-nav href="index.html" data-cursor="hot">Home</a></li>
+          <li><a class="nav__link" data-nav href="about.html" data-cursor="hot">About</a></li>
+          <li><a class="nav__link" data-nav href="expertise.html" data-cursor="hot">Expertise</a></li>
+          <li><a class="nav__link" data-nav href="projects.html" data-cursor="hot">Projects</a></li>
+          <li><a class="nav__link" data-nav href="services.html" data-cursor="hot">Services</a></li>
+          <li><a class="nav__link" data-nav href="process.html" data-cursor="hot">Process</a></li>
+          <li><a class="nav__link" data-nav href="contact.html" data-cursor="hot">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" data-cursor="hot"><span class="nav__toggle-bars" aria-hidden="true"></span></button>
+      </nav>
+    </header>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" data-nav href="index.html" data-cursor="hot">Home</a></li>
+        <li><a class="mobile-nav__link" data-nav href="about.html" data-cursor="hot">About</a></li>
+        <li><a class="mobile-nav__link" data-nav href="expertise.html" data-cursor="hot">Expertise</a></li>
+        <li><a class="mobile-nav__link" data-nav href="projects.html" data-cursor="hot">Projects</a></li>
+        <li><a class="mobile-nav__link" data-nav href="services.html" data-cursor="hot">Services</a></li>
+        <li><a class="mobile-nav__link" data-nav href="process.html" data-cursor="hot">Process</a></li>
+        <li><a class="mobile-nav__link" data-nav href="contact.html" data-cursor="hot">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="page">
+      <header class="page-hero">
+        <div class="page-hero__bg" aria-hidden="true"><div class="glow glow--tr"></div></div>
+        <div class="wrap">
+          <p class="eyebrow" data-intro="eyebrow">Approach</p>
+          <h1 class="display display--lg process-hero__title" data-intro="title" data-split-lines>From idea<br />to reality.</h1>
+          <p class="lede" data-intro="copy" style="margin-top:1.25rem">An interactive development journey with four clear stages.</p>
+        </div>
+      </header>
+
+      <section class="section" style="padding-top:0">
+        <div class="wrap">
+          <div class="process-track" id="process-track"></div>
+        </div>
+      </section>
+
+      <section class="section section--tone">
+        <div class="wrap content-grid-2">
+          <div class="content-block reveal">
+            <p class="eyebrow">Collaboration</p>
+            <h2 class="display display--md">What you can expect.</h2>
+            <p>Each stage produces clarity: shared understanding, structured plans, working interfaces and a polished handoff. Communication stays direct so decisions are easy to make.</p>
+            <p>You do not need every detail figured out before we begin — discovery exists to uncover the important ones.</p>
+          </div>
+          <ul class="detail-list reveal">
+            <li><strong>Transparent milestones</strong><span>You always know which stage we are in and what comes next.</span></li>
+            <li><strong>Feedback loops</strong><span>Reviews happen early enough to refine direction without waste.</span></li>
+            <li><strong>Practical documentation</strong><span>Structure, features and technical notes stay understandable.</span></li>
+            <li><strong>Launch readiness</strong><span>Testing and polish before anything goes live.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap" style="display:grid;gap:1.25rem">
+          <h2 class="display display--md">Ready when you are.</h2>
+          <p class="lede">Whether you need a business website or a custom web application, the process stays collaborative and transparent.</p>
+          <a class="btn btn--fill magnetic" href="contact.html" data-cursor="hot">Let's begin <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/shell.js?v=signal12"></script>
+    <script src="js/public-render.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js?v=signal12"></script>
+  </body>
+</html>

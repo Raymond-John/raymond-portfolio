@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey & CV — Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css?v=signal12" />
+  </head>
+  <body class="admin-body" data-admin="education">
+    <div class="admin-app">
+    <div class="admin-shell">
+      <aside id="admin-sidebar"></aside>
+      <div id="admin-backdrop"></div>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar__left">
+            <button class="menu-btn" id="admin-menu-btn" type="button" aria-label="Open menu">☰</button>
+            <div>
+              <h1>Journey & CV</h1>
+              <p>Timeline, education and experience for the About page</p>
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <div class="grid-2">
+            <form class="panel" id="journey-form">
+              <div class="panel__head"><div><h2>Add journey stage</h2></div><button class="btn btn-primary btn-sm" type="submit">Add</button></div>
+              <div class="field-row">
+                <div class="field"><label for="j-label">Label</label><input id="j-label" name="label" required /></div>
+                <div class="field"><label for="j-title">Title</label><input id="j-title" name="title" required /></div>
+              </div>
+              <div class="field"><label for="j-text">Text</label><textarea id="j-text" name="text" required></textarea></div>
+            </form>
+            <div class="panel">
+              <div class="panel__head"><div><h2>Journey stages</h2></div></div>
+              <div class="entry-list" id="journey-root"></div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <form class="panel" id="education-form">
+              <div class="panel__head"><div><h2>Add education</h2></div><button class="btn btn-primary btn-sm" type="submit">Add</button></div>
+              <div class="field-row">
+                <div class="field"><label for="title">Title</label><input id="title" name="title" required /></div>
+                <div class="field"><label for="place">Place</label><input id="place" name="place" /></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label for="period">Period</label><input id="period" name="period" /></div>
+                <div class="field"><label for="detail">Detail</label><input id="detail" name="detail" /></div>
+              </div>
+            </form>
+            <div class="panel">
+              <div class="panel__head"><div><h2>Education</h2></div></div>
+              <div class="entry-list" id="education-root"></div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <form class="panel" id="experience-form">
+              <div class="panel__head"><div><h2>Add experience</h2></div><button class="btn btn-primary btn-sm" type="submit">Add</button></div>
+              <div class="field-row">
+                <div class="field"><label for="exp-title">Title</label><input id="exp-title" name="title" required /></div>
+                <div class="field"><label for="exp-place">Place</label><input id="exp-place" name="place" /></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label for="exp-period">Period</label><input id="exp-period" name="period" /></div>
+                <div class="field"><label for="exp-detail">Detail</label><input id="exp-detail" name="detail" /></div>
+              </div>
+            </form>
+            <div class="panel">
+              <div class="panel__head"><div><h2>Experience</h2></div></div>
+              <div class="entry-list" id="experience-root"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
